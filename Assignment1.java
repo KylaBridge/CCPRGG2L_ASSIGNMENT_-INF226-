@@ -21,8 +21,7 @@ public class test {
         } else {
             System.out.println("invalid student email address");
         }
-
-
+          scan.close();
 
 //philippineCPnumber
 
@@ -41,7 +40,7 @@ public class test {
    } else {
        System.out.println("invalid number");
    }
-
+     input.close();
 
 //birthdate
 Scanner sc = new Scanner(System.in);
@@ -61,10 +60,7 @@ if (ma) {
 
     }
 
-
-
-
-
+sc.close();
 
 
 }
