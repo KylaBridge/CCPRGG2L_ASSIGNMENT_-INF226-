@@ -2,7 +2,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.Scanner;
 
-public class test {
+public class Assignment1 {
     public static void main(String[] args) {
 
 //validateEmailaddress
@@ -21,46 +21,43 @@ public class test {
         } else {
             System.out.println("invalid student email address");
         }
-          scan.close();
 
 //philippineCPnumber
 
-    Scanner input = new Scanner(System.in);
-    System.out.print("Enter your number: ");
-    String num = input.nextLine();
+        System.out.print("Enter your number: ");
+        String num = scan.nextLine();
 
    //method
-   Pattern pat = Pattern.compile("\\+63+\\d{10}");
-   Matcher matchh = pat.matcher(num);
+        pattern = Pattern.compile("\\+63+\\d{10}");
+        matcher = pattern.matcher(num);
 
-   boolean matchhh = matchh.matches();
+        match = matcher.matches();
 
-   if (matchhh) {
+   if (match) {
        System.out.println("valid number");
    } else {
        System.out.println("invalid number");
    }
-     input.close();
 
 //birthdate
-Scanner sc = new Scanner(System.in);
-System.out.print("Enter birthday(YYYY-MM-DD) : ");
-String date = sc.nextLine();
+
+        System.out.print("Enter birthday(YYYY-MM-DD) : ");
+        String date = scan.nextLine();
 
 //method
-Pattern k = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
-Matcher m = k.matcher(date);
+        pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
+        matcher = pattern.matcher(date);
 
-boolean ma = m.matches();
+        match = matcher.matches();
 
-if (ma) {
+if (match) {
    System.out.println("valid date");
 } else {
    System.out.println("invalid date");
 
     }
 
-sc.close();
+scan.close();
 
 
 }
