@@ -6,41 +6,41 @@ public class test {
     public static void main(String[] args) {
 
 //validateEmailaddress
-        // Scanner scan = new Scanner(System.in);
-        // System.out.print("Enter student email address: ");
-        // String studentNum = scan.nextLine();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter student email address: ");
+        String studentNum = scan.nextLine();
 
-        // // Long method
-        // Pattern pattern = Pattern.compile("\\w+@students.national-u.edu.ph");
-        // Matcher matcher = pattern.matcher(studentNum);
+        // Long method
+        Pattern pattern = Pattern.compile("\\w+@students.national-u.edu.ph");
+        Matcher matcher = pattern.matcher(studentNum);
 
-        // boolean match = matcher.matches();
+        boolean match = matcher.matches();
 
-        // if (match) {
-        //     System.out.println("valid student email address");
-        // } else {
-        //     System.out.println("invalid student email address");
-        // }
+        if (match) {
+            System.out.println("valid student email address");
+        } else {
+            System.out.println("invalid student email address");
+        }
 
 
 
 //philippineCPnumber
 
-//     Scanner input = new Scanner(System.in);
-//     System.out.print("Enter your number: ");
-//     String num = input.nextLine();
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter your number: ");
+    String num = input.nextLine();
 
-//    //method
-//    Pattern pat = Pattern.compile("\\+63+\\d{10}");
-//    Matcher matchh = pat.matcher(num);
+   //method
+   Pattern pat = Pattern.compile("\\+63+\\d{10}");
+   Matcher matchh = pat.matcher(num);
 
-//    boolean matchhh = matchh.matches();
+   boolean matchhh = matchh.matches();
 
-//    if (matchhh) {
-//        System.out.println("valid number");
-//    } else {
-//        System.out.println("invalid number");
-//    }
+   if (matchhh) {
+       System.out.println("valid number");
+   } else {
+       System.out.println("invalid number");
+   }
 
 
 //birthdate
